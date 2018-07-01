@@ -83,7 +83,6 @@ bool isFree(Grid *grid, Node currNode){
     }
     return false;
 }
-    
 
 // Returns neighbour coordinates in upward direction
 Node getNeighbour(pair<int,int> pos, string dir){
@@ -174,7 +173,7 @@ int main(int argc, char **argv){
     
     // checking if start and goal positions are traversable
 //     if( !(theGrid->nodeGrid[start.second][start.first].free) || !(theGrid->nodeGrid[goal.second][goal.first].free) ){
-    if( !(isFree(theGrid->nodeGrid,start)) && !(isFree(theGrid,goal)) ){
+    if( !(isFree(theGrid->nodeGrid,start)) && !(isFree(theGrid->nodeGrid,goal)) ){
         cout << "Invalid start/end point" << endl;
         return 1;
     }
