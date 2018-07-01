@@ -173,7 +173,7 @@ int main(int argc, char **argv){
     
     // checking if start and goal positions are traversable
 //     if( !(theGrid->nodeGrid[start.second][start.first].free) || !(theGrid->nodeGrid[goal.second][goal.first].free) ){
-    if( !(isFree(theGrid,start)) && !(isFree(theGrid,goal)) ){
+    if( !(isFree(theGrid,currNode)) && !(isFree(theGrid,goalNode)) ){
         cout << "Invalid start/end point" << endl;
         return 1;
     }
